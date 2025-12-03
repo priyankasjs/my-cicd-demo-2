@@ -20,6 +20,11 @@
     <p id="message"></p>
   </main>
 
+  <form action="feedback.php" method="post">
+    <input type="text" name="feedback" placeholder="Enter something..." />
+    <button type="submit">Submit</button>
+  </form>
+
   <footer>
     <small>&copy; 2025 Demo Site</small>
   </footer>
