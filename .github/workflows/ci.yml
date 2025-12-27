@@ -16,7 +16,7 @@ jobs:
 
       - name: Check required files exist
         run: |
-          test -f index.html
+          test -f index.php
           test -f README.md
 
       - name: Validate README content
