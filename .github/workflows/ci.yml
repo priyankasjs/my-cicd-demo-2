@@ -11,6 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Check required files exist
         run: |
           test -f index.php
@@ -19,3 +24,8 @@ jobs:
         run: |
           grep -E "^#" README.md
           grep -E '```' README.md
+
+      - name: Validate README content
+        run: |
+          grep -E "^#" README.md
+          grep -E "```" README.md
